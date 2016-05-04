@@ -44,7 +44,7 @@
   @return length($list);
 }
 
-@function -compass-slice($list, $start, $end: false) {
+//@function -compass-slice($list, $start, $end: false) {
   @if $end == false {
     $end: length($list);
   }
@@ -53,7 +53,7 @@
     $full: $full, nth($list, $i);
   }
   @return $full;
-}
+//}
 
 @function reject($list, $reject1, $reject2:null, $reject3:null, $reject4:null, $reject5:null, $reject6:null, $reject7:null, $reject8:null, $reject9:null) {
   $rejects: $reject1, $reject2, $reject3, $reject4, $reject5, $reject6, $reject7, $reject8, $reject9;
